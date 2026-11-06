@@ -1,0 +1,37 @@
+name: Build documentation examples
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install documentation tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y make gnuplot doxygen graphviz \
+            texlive-latex-recommended texlive-latex-extra \
+            texlive-fonts-recommended texlive-bibtex-extra
+      - name: Check repository structure
+        run: make check
+      - name: Compile LaTeX report
+        run: make latex
+      - name: Compile Beamer slides
+        run: make slides
+      - name: Generate Doxygen HTML
+        run: make doxygen
+      - name: Generate Gnuplot chart
+        run: make plot
+      - name: Upload generated outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: technical-writing-builds
+          path: |
+            docs/latex/main.pdf
+            docs/beamer/presentation.pdf
+            docs/doxygen/html/
+            docs/plotting/documentation-progress.png
