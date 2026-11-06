@@ -1,0 +1,51 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=25mm,headheight=15pt]{geometry}
+\usepackage{xcolor,graphicx,booktabs,tabularx,longtable,multirow,arydshln,amsmath,amssymb,enumitem,multicol,fancyhdr,float,hyperref,natbib,makeidx,pdflscape,caption,array}
+\definecolor{Navy}{HTML}{17324D}
+\definecolor{Teal}{HTML}{0F766E}
+\definecolor{Muted}{HTML}{586A7A}
+\hypersetup{colorlinks=true,linkcolor=Navy,citecolor=Teal,urlcolor=Teal}
+\pagestyle{fancy}\fancyhf{}
+\lhead{Technical Writing Portfolio}\rhead{LaTeX Report}\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\parskip}{5pt}\setlength{\parindent}{0pt}
+\setlist{itemsep=2pt,topsep=3pt}
+\makeindex
+\title{A Practical Portfolio for Technical Writing}
+\author{Student Name \\ Department of Computer Science and Engineering}
+\date{November 2026}
+\begin{document}
+\maketitle
+\begin{center}\color{Muted}\small A worked example of structured writing, mathematics, figures, tables and references\end{center}
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+\section{Introduction}\label{sec:introduction}
+Technical writing\index{documentation} communicates information so that a specific reader can understand, verify and use it. A good technical document is accurate, organised, readable and reproducible. This report demonstrates techniques that help achieve those goals.
+\subsection{Objectives}
+\begin{enumerate}
+\item Organise a document using sections and subsections.
+\item Apply consistent page and text styling.
+\item Typeset mathematics, tables and images.
+\item Connect content using labels, citations and an index.
+\end{enumerate}
+\subsection{A simple document workflow}
+\begin{figure}[H]\centering
+\fbox{\parbox{0.88\linewidth}{\centering\textbf{Plan}\quad$\rightarrow$\quad\textbf{Draft}\quad$\rightarrow$\quad\textbf{Review}\quad$\rightarrow$\quad\textbf{Publish}}}
+\caption{A repeatable technical-writing workflow.}\label{fig:workflow}
+\end{figure}
+\input{chapters/formatting}
+\input{chapters/tables-images}
+\input{chapters/references-index}
+\section{Conclusion}\label{sec:conclusion}
+A well-structured document is easier to read, review and maintain. LaTeX separates content from presentation, while labels, citations and indexes make longer documents easier to navigate.
+\section*{Acknowledgement}
+This is a learning template. Replace sample identity and content with your own work before submitting it.
+\bibliographystyle{plainnat}
+\bibliography{references}
+\printindex
+\end{document}
