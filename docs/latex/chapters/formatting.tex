@@ -1,0 +1,41 @@
+\section{Page styling and content formatting}\label{sec:formatting}
+\subsection{Paper size, margins and page layout}
+The document class and \texttt{geometry} package control page size and margins. This report selects A4 paper and a 25 mm margin. The \texttt{fancyhdr} package places the title in the header and the page number in the footer. The \texttt{pdflscape} package provides the \texttt{landscape} environment.
+\begin{landscape}
+\begin{table}[H]\centering
+\caption{Example of a landscape page layout.}
+\begin{tabularx}{0.88\linewidth}{lXl}
+\toprule Setting & Purpose & Example\\\midrule
+Paper size & Physical page dimensions & A4\\
+Margins & Usable writing area & 25 mm\\
+Orientation & Page direction & Landscape\\
+Columns & Vertical reading lanes & Two columns\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{landscape}
+\subsection{Text styles, size, alignment and colour}
+Normal text is used for paragraphs. \textbf{Bold text} highlights important terms; \textit{italic text} adds emphasis; and \texttt{monospaced text} represents commands or filenames. A colour example is {\color{Teal}\textbf{technical writing}}.
+\begin{center}{\Large A centred line}\\[4pt]{\small A smaller supporting line}\end{center}
+\subsection{Lists}
+An unordered list is useful when order does not matter:
+\begin{itemize}\item Clear headings.\item Consistent terminology.\item Correctly labelled figures and tables.\end{itemize}
+A numbered list is appropriate when steps must be followed in order:
+\begin{enumerate}\item Plan the content.\item Draft and format the document.\item Review, correct and publish it.\end{enumerate}
+\subsection{Multiple columns}
+The \texttt{multicol} package can divide a section into columns. This is useful for compact reference material, but long equations and wide tables may be better kept in one column.
+\begin{multicols}{2}
+\textbf{Column one.} Technical documents should use precise terms, define abbreviations and keep each paragraph focused on one idea.
+\columnbreak
+\textbf{Column two.} Lists, short examples and concise notes work well in columns. Check that the reading order remains clear.
+\end{multicols}
+\subsection{Writing mathematics}
+Inline mathematics: $a^2+b^2=c^2$. A displayed, numbered equation:
+\begin{equation}\label{eq:mean}\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i.\end{equation}
+Equation~\ref{eq:mean} gives the arithmetic mean of $n$ observations.
+\begin{align}(a+b)^2&=(a+b)(a+b)\\&=a^2+2ab+b^2.\end{align}
+A matrix and a piecewise function:
+\[
+A=\begin{bmatrix}1&2\\3&4\end{bmatrix},\qquad
+f(x)=\begin{cases}x^2,&x\geq0,\\-x,&x<0.\end{cases}
+\]
