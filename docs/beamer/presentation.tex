@@ -1,0 +1,71 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs,amsmath,graphicx}
+\definecolor{DeepTeal}{HTML}{0F766E}
+\setbeamercolor{structure}{fg=DeepTeal}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\title[Technical Writing]{Technical Writing: Tools and Workflow}
+\subtitle{A practical course portfolio}
+\author{Student Name}
+\institute{Department of Computer Science and Engineering}
+\date{November 2026}
+\begin{document}
+\begin{frame}\titlepage\end{frame}
+\begin{frame}{Why technical writing matters}
+\begin{block}{Purpose}Turn complex information into content a reader can understand, verify and use.\end{block}
+\begin{columns}[T,onlytextwidth]
+\column{0.48\textwidth}
+\begin{exampleblock}{A good document}\begin{itemize}\item Clear audience and purpose\item Logical structure\item Accurate evidence\end{itemize}\end{exampleblock}
+\column{0.48\textwidth}
+\begin{alertblock}{Avoid}\begin{itemize}\item Unexplained jargon\item Inconsistent formatting\item Unsupported claims\end{itemize}\end{alertblock}
+\end{columns}
+\end{frame}
+\begin{frame}{The toolchain}
+\begin{columns}[T,onlytextwidth]
+\column{0.5\textwidth}
+\begin{block}{Create content}Google Docs \qquad LaTeX\end{block}
+\begin{block}{Explain software}Doxygen \qquad Markdown\end{block}
+\column{0.5\textwidth}
+\begin{block}{Communicate visually}Beamer \qquad Inkscape\end{block}
+\begin{block}{Support and publish}Gnuplot \qquad Git/GitHub\end{block}
+\end{columns}
+\end{frame}
+\begin{frame}{A repeatable documentation process}
+\begin{enumerate}
+\item Plan: identify audience, problem and scope.
+\item Draft: organise content into a clear structure.
+\item Review: verify facts, language, diagrams and references.
+\item Publish: export, share and preserve editable sources.
+\item Maintain: update material when the system changes.
+\end{enumerate}
+\end{frame}
+\begin{frame}{Choosing the right tool}\small
+\begin{tabular}{lll}\toprule\textbf{Need}&\textbf{Tool}&\textbf{Deliverable}\\\midrule
+Collaborative report&Google Docs&Shared document\\
+Structured report&LaTeX&PDF + source\\
+API reference&Doxygen&HTML documentation\\
+Slides&Beamer&PDF presentation\\
+Editable diagram&Inkscape / Draw&SVG / PDF\\
+Data visualisation&Gnuplot&PNG / PDF graph\\
+Change tracking&Git&Commit history\\\bottomrule
+\end{tabular}
+\end{frame}
+\begin{frame}{A little mathematics}
+\begin{block}{Example: arithmetic mean}
+\[\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i\]
+The mean is the sum of observations divided by their count.
+\end{block}
+\end{frame}
+\begin{frame}{Key takeaways}
+\begin{itemize}
+\item Select tools based on document purpose and audience.
+\item Keep source editable and final output readable.
+\item Use diagrams, tables and equations when they add meaning.
+\item Use version control to make changes traceable.
+\end{itemize}
+\end{frame}
+\begin{frame}{Thank you}\centering{\Huge Thank you!}\\[0.5cm]{\large Questions?}\end{frame}
+\end{document}
