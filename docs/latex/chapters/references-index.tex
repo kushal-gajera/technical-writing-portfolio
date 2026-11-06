@@ -1,0 +1,7 @@
+\section{Referencing and indexing}\label{sec:references}
+\subsection{Cross-references}
+Place a \texttt{\textbackslash label} after a heading, caption or numbered equation, then refer to it using \texttt{\textbackslash ref}. For example, Section~\ref{sec:formatting}, Table~\ref{tab:tools} and Figure~\ref{fig:workflow}. The \texttt{hyperref} package makes many references clickable.
+\subsection{Citations and bibliography}
+A citation connects a statement to its source. Version control\index{version control} keeps a traceable record of changes. This report uses BibTeX with \texttt{natbib}; see \citep{lamport1994latex} for a classic introduction to LaTeX. Entries are stored in \texttt{references.bib}.
+\subsection{Index}
+An index provides an alphabetical route to important terms. Add entries with \texttt{\textbackslash index\{Doxygen\}}. The \texttt{makeidx} package and MakeIndex program generate the index printed at the end.
