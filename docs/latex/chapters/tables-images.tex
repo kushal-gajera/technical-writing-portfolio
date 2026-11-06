@@ -1,0 +1,53 @@
+\section{Tables and images}\label{sec:tables-images}
+\subsection{A basic table}
+Table~\ref{tab:tools} uses booktabs rules for a clean academic style.
+\begin{table}[H]\centering
+\caption{Example tools used in a documentation workflow.}\label{tab:tools}
+\begin{tabular}{lll}\toprule
+Tool & Main purpose & Source format\\\midrule
+LaTeX & Typeset reports & \texttt{.tex}\\
+Doxygen & Generate API documentation & C++ comments\\
+Beamer & Create slide presentations & \texttt{.tex}\\
+Gnuplot & Plot numerical data & \texttt{.gp}\\\bottomrule
+\end{tabular}
+\end{table}
+\subsection{Merged cells and dashed borders}
+The \texttt{multirow} and \texttt{multicolumn} commands merge cells. The \texttt{arydshln} package supports dashed rules.
+\begin{table}[H]\centering
+\caption{A compact table with merged cells and dashed rules.}\label{tab:merged}
+\begin{tabular}{|l|c|c|}\hline
+\multirow{2}{*}{\textbf{Area}} & \multicolumn{2}{c|}{\textbf{Evidence}}\\
+\cdashline{2-3}
+& Source file & Output\\\hline
+Documentation & C++ comments & HTML pages\\\hline
+Presentation & Beamer source & PDF slides\\\hline
+\end{tabular}
+\end{table}
+\subsection{Tables spanning multiple pages}
+Use \texttt{longtable} when rows may continue over a page boundary. Its header can repeat on later pages.
+\begin{longtable}{p{0.22\linewidth}p{0.66\linewidth}}
+\caption{Example long-table content.}\label{tab:long}\\
+\toprule\textbf{Stage}&\textbf{Description}\\\midrule
+\endfirsthead
+\toprule\textbf{Stage}&\textbf{Description (continued)}\\\midrule
+\endhead
+Planning & Identify reader, purpose, scope, constraints and expected output.\\
+Audience analysis & Record what the reader knows and what they need to do.\\
+Outline & Arrange sections and decide which diagrams, tables or examples are necessary.\\
+Drafting & Organise information and write a first version.\\
+Evidence & Check facts, measurements and code examples against reliable sources.\\
+Figures & Number diagrams, add captions and refer to them in text.\\
+References & Cite external ideas, data and quotations consistently.\\
+Review & Check correctness, clarity, consistency and accessibility.\\
+Publishing & Export to the required format and preserve editable sources.\\
+Maintenance & Update the document when the system or requirements change.\\
+\bottomrule
+\end{longtable}
+\subsection{Adding, scaling and rotating images}
+The \texttt{graphicx} package provides \texttt{width}, \texttt{scale} and \texttt{angle} options:
+\begin{verbatim}
+\includegraphics[width=0.65\linewidth]{diagram.png}
+\includegraphics[scale=0.5]{diagram.png}
+\includegraphics[width=0.5\linewidth,angle=90]{diagram.png}
+\end{verbatim}
+Keep proportions unless there is a clear reason to stretch an image. Add a caption and label.
