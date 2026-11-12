@@ -16,10 +16,11 @@
 *.xdv
 
 # Doxygen generated output
-05-doxygen/example/html/
-05-doxygen/example/latex/
+03-Doxygen/example/html/
+03-Doxygen/example/latex/
 
 # Editor and operating-system files
 .DS_Store
 Thumbs.db
 .vscode/
+.idea/
