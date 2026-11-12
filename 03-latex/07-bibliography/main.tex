@@ -1,0 +1,21 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[numbers]{natbib}
+
+\title{Bibliography and Citations}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+LaTeX supports structured references to books and other sources. Lamport's book is a well-known introduction to the system \citep{lamport1994}. A later reference work provides further detail about packages and document preparation \citep{mittelbach2004}.
+
+\section{Why cite sources?}
+Citations help readers identify the material used to support an explanation. The bibliography at the end provides the publication details.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

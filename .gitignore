@@ -1,25 +1,25 @@
+# LaTeX build files
 *.aux
 *.bbl
 *.blg
 *.fdb_latexmk
 *.fls
+*.idx
+*.ilg
+*.ind
 *.lof
 *.log
 *.lot
 *.out
-*.toc
 *.synctex.gz
-*.idx
-*.ilg
-*.ind
-*.nav
-*.snm
-*.vrb
-html/
-latex/
-build/
-documentation-progress.png
+*.toc
+*.xdv
+
+# Doxygen generated output
+05-doxygen/example/html/
+05-doxygen/example/latex/
+
+# Editor and operating-system files
 .DS_Store
 Thumbs.db
 .vscode/
-.idea/

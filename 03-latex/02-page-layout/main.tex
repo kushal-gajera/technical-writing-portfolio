@@ -1,0 +1,49 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=25mm,headheight=15pt]{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{pdflscape}
+\usepackage{booktabs}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Technical Writing}
+\rhead{Page Layout}
+\cfoot{\thepage}
+
+\title{Page Layout in LaTeX}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Paper size and margins}
+This document uses A4 paper and 25 mm margins. Change the options in the geometry package to experiment with other page sizes and margins.
+
+\section{Headers and footers}
+The running header displays the course and topic. The footer displays the page number.
+
+\section{Multiple columns}
+\begin{multicols}{2}
+Technical documents sometimes use columns for compact reference material. A two-column layout should remain readable and should not force the reader to jump between unrelated ideas.
+
+This second paragraph continues the example in the same column layout. Try changing the number of columns and observe how the text is balanced.
+\end{multicols}
+
+\begin{landscape}
+\section{Landscape page}
+This page is in landscape orientation. It can be used for content that is wider than a portrait page.
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Setting & Purpose & Example\\
+\midrule
+Paper size & Page dimensions & A4\\
+Margins & Writing area & 25 mm\\
+Orientation & Page direction & Landscape\\
+Columns & Reading layout & Two columns\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{landscape}
+\end{document}

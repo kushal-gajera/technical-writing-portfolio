@@ -1,0 +1,44 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+
+\title{Mathematics in LaTeX}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Inline and displayed mathematics}
+An inline equation is written as \(a^2+b^2=c^2\). A displayed equation gets its own line:
+\[
+E = mc^2
+\]
+
+\section{Fractions, powers and symbols}
+\[
+\frac{a+b}{c}, \qquad x_1+x_2+\cdots+x_n, \qquad \alpha+\beta=\gamma
+\]
+
+\section{Numbered equation}
+\begin{equation}
+\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i
+\end{equation}
+
+\section{Aligned equations}
+\begin{align}
+(a+b)^2 &= (a+b)(a+b)\\
+        &= a^2+2ab+b^2
+\end{align}
+
+\section{Matrix and piecewise function}
+\[
+A=\begin{bmatrix}1&2\\3&4\end{bmatrix}
+\qquad
+f(x)=\begin{cases}
+x^2,&x\geq 0,\\
+-x,&x<0.
+\end{cases}
+\]
+\end{document}

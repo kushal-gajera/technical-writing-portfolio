@@ -1,0 +1,45 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\definecolor{CourseBlue}{HTML}{245A87}
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+\title{Formatting Content in LaTeX}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Text styles}
+This is normal text. This is \textbf{bold text}. This is \textit{italic text}. This is \texttt{typewriter text}.
+
+\section{Font sizes}
+{\tiny Tiny text}\par
+{\small Small text}\par
+{\normalsize Normal text}\par
+{\large Large text}\par
+{\Large Larger text}\par
+{\huge Huge text}
+
+\section{Alignment}
+\begin{flushleft}This text is aligned to the left.\end{flushleft}
+\begin{center}This text is centred.\end{center}
+\begin{flushright}This text is aligned to the right.\end{flushright}
+
+\section{Colour}
+{\color{CourseBlue}\textbf{This sentence uses a custom text colour.}}
+
+\section{Lists}
+\begin{itemize}
+  \item First unordered item.
+  \item Second unordered item.
+\end{itemize}
+
+\begin{enumerate}
+  \item First ordered step.
+  \item Second ordered step.
+\end{enumerate}
+\end{document}

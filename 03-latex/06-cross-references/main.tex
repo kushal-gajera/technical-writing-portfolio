@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\title{Cross-References in LaTeX}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}\label{sec:introduction}
+This example demonstrates labels and automatic references.
+
+\section{A table with a label}\label{sec:table}
+\begin{table}[ht]
+\centering
+\caption{Example tools}\label{tab:tools}
+\begin{tabular}{ll}
+\hline
+Tool & Purpose\\
+\hline
+LaTeX & Document preparation\\
+Beamer & Slide presentations\\
+Doxygen & Code documentation\\
+\hline
+\end{tabular}
+\end{table}
+
+\section{A figure with a label}\label{sec:figure}
+\begin{figure}[ht]
+\centering
+\fbox{\parbox{0.6\linewidth}{\centering A labelled figure placeholder}}
+\caption{An example figure.}\label{fig:example}
+\end{figure}
+
+\section{Refer to earlier content}
+Section~\ref{sec:introduction} introduces the example. Table~\ref{tab:tools} lists the tools, and Figure~\ref{fig:example} is the sample figure. Page~\pageref{sec:table} contains the table section.
+
+\end{document}

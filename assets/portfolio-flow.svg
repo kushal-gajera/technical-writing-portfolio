@@ -1,40 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="t d">
-<title id="t">Animated learning path for the Technical Writing Portfolio</title>
-<desc id="d">A moving marker travels below four cards: understand the syllabus, create the documents, add visuals and share the work.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="300" viewBox="0 0 1120 300" role="img" aria-labelledby="title desc">
+<title id="title">Technical Writing course workflow</title>
+<desc id="desc">Animated marker moves through documentation fundamentals, writing in Google Docs and LaTeX, presenting with Beamer, documenting code with Doxygen, and sharing with Git and GitHub.</desc>
 <defs><style>
-.bg{fill:#101e34}.title{font:700 28px Arial,sans-serif;fill:#f8fafc}.small{font:15px Arial,sans-serif;fill:#b6c7d9}.node{fill:#192b45;stroke:#425b78;stroke-width:2}.nodeTitle{font:700 19px Arial,sans-serif;fill:#f8fafc}.nodeSub{font:14px Arial,sans-serif;fill:#bfd0e1}.line{stroke:#66809c;stroke-width:4;fill:none;stroke-linecap:round}
+.bg{fill:#f3f6fa}.heading{font:700 23px Arial,sans-serif;fill:#1d334b}.sub{font:14px Arial,sans-serif;fill:#496078}.card{fill:#fff;stroke:#a9bfd4;stroke-width:2}.number{font:700 13px Arial,sans-serif;fill:#fff}.line{stroke:#92a8bd;stroke-width:4;fill:none;stroke-linecap:round}
 </style></defs>
-<rect class="bg" width="1200" height="360" rx="22"/>
-<text x="600" y="54" text-anchor="middle" class="title">One course · five tools · one connected portfolio</text>
-<text x="600" y="82" text-anchor="middle" class="small">Follow the flow from understanding the topic to presenting your own work.</text>
-<path d="M161 290 H1043" class="line"/>
+<rect class="bg" width="1120" height="300" rx="20"/>
+<text x="560" y="42" text-anchor="middle" class="heading">From clear documentation to a shareable portfolio</text>
+<text x="560" y="66" text-anchor="middle" class="sub">Explore each tool, practise with an example, then explain what you learned.</text>
+<path d="M112 226 H1008" class="line"/>
 <g>
- <rect x="42" y="132" width="238" height="142" rx="14" class="node"/>
- <text x="161" y="177" text-anchor="middle" class="nodeTitle">01 · Understand</text>
- <text x="161" y="208" text-anchor="middle" class="nodeSub">Read the syllabus map</text>
- <text x="161" y="231" text-anchor="middle" class="nodeSub">Choose a topic</text>
+<rect class="card" x="24" y="104" width="192" height="104" rx="12"/>
+<circle cx="49" cy="129" r="13" fill="#315b83"/><text x="49" y="134" text-anchor="middle" class="number">1</text>
+<text x="120" y="151" text-anchor="middle" class="heading" font-size="17">Understand</text>
+<text x="120" y="177" text-anchor="middle" class="sub">Documentation basics</text>
 </g>
 <g>
- <rect x="336" y="132" width="238" height="142" rx="14" class="node"/>
- <text x="455" y="177" text-anchor="middle" class="nodeTitle">02 · Write</text>
- <text x="455" y="208" text-anchor="middle" class="nodeSub">Google Docs + LaTeX</text>
- <text x="455" y="231" text-anchor="middle" class="nodeSub">Reports and references</text>
+<rect class="card" x="246" y="104" width="192" height="104" rx="12"/>
+<circle cx="271" cy="129" r="13" fill="#315b83"/><text x="271" y="134" text-anchor="middle" class="number">2</text>
+<text x="342" y="151" text-anchor="middle" class="heading" font-size="17">Write</text>
+<text x="342" y="177" text-anchor="middle" class="sub">Google Docs · LaTeX</text>
 </g>
 <g>
- <rect x="630" y="132" width="238" height="142" rx="14" class="node"/>
- <text x="749" y="177" text-anchor="middle" class="nodeTitle">03 · Visualise</text>
- <text x="749" y="208" text-anchor="middle" class="nodeSub">Beamer + drawing tools</text>
- <text x="749" y="231" text-anchor="middle" class="nodeSub">Diagrams and graphs</text>
+<rect class="card" x="468" y="104" width="192" height="104" rx="12"/>
+<circle cx="493" cy="129" r="13" fill="#315b83"/><text x="493" y="134" text-anchor="middle" class="number">3</text>
+<text x="564" y="151" text-anchor="middle" class="heading" font-size="17">Present</text>
+<text x="564" y="177" text-anchor="middle" class="sub">Beamer slides</text>
 </g>
 <g>
- <rect x="924" y="132" width="238" height="142" rx="14" class="node"/>
- <text x="1043" y="177" text-anchor="middle" class="nodeTitle">04 · Share</text>
- <text x="1043" y="208" text-anchor="middle" class="nodeSub">Doxygen + GitHub</text>
- <text x="1043" y="231" text-anchor="middle" class="nodeSub">Build, review and publish</text>
+<rect class="card" x="690" y="104" width="192" height="104" rx="12"/>
+<circle cx="715" cy="129" r="13" fill="#315b83"/><text x="715" y="134" text-anchor="middle" class="number">4</text>
+<text x="786" y="151" text-anchor="middle" class="heading" font-size="17">Document code</text>
+<text x="786" y="177" text-anchor="middle" class="sub">Doxygen</text>
 </g>
-<circle r="9" fill="#f5bd70" stroke="#fff4dc" stroke-width="3">
- <animateMotion dur="8s" repeatCount="indefinite" path="M161 290 H1043"/>
+<g>
+<rect class="card" x="912" y="104" width="184" height="104" rx="12"/>
+<circle cx="937" cy="129" r="13" fill="#315b83"/><text x="937" y="134" text-anchor="middle" class="number">5</text>
+<text x="1004" y="151" text-anchor="middle" class="heading" font-size="17">Share</text>
+<text x="1004" y="177" text-anchor="middle" class="sub">Git · GitHub</text>
+</g>
+<g fill="#d58b32" stroke="#fff" stroke-width="3">
+<circle r="9">
+<animateMotion dur="9s" repeatCount="indefinite" path="M112 226 H1008"/>
 </circle>
-<g fill="#f5bd70"><circle cx="161" cy="290" r="4"/><circle cx="455" cy="290" r="4"/><circle cx="749" cy="290" r="4"/><circle cx="1043" cy="290" r="4"/></g>
-<text x="600" y="330" text-anchor="middle" class="small">The moving marker shows the learning sequence. Each step links to a practical guide below.</text>
+</g>
+<text x="560" y="266" text-anchor="middle" class="sub">Each numbered folder contains an explanation and practical material.</text>
 </svg>

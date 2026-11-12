@@ -1,0 +1,72 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,booktabs,tabularx,longtable,multirow,arydshln}
+
+\title{Tables and Images in LaTeX}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Basic table}
+\begin{table}[ht]
+\centering
+\caption{Tools used in technical writing}
+\begin{tabular}{lll}
+\toprule
+Tool & Purpose & File type\\
+\midrule
+LaTeX & Typeset documents & .tex\\
+Beamer & Create slides & .tex\\
+Doxygen & Document source code & C++ comments\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Merged cells and dashed rules}
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+\multirow{2}{*}{Area} & \multicolumn{2}{c|}{Output}\\
+\cdashline{2-3}
+& Editable source & Final result\\
+\hline
+Report & main.tex & PDF\\
+Slides & presentation.tex & PDF\\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Long tables}
+\begin{longtable}{p{0.25\linewidth}p{0.62\linewidth}}
+\caption{Stages in preparing a report}\\
+\toprule Stage & Description\\
+\midrule
+\endfirsthead
+\toprule Stage & Description (continued)\\
+\midrule
+\endhead
+Planning & Identify the audience, purpose, scope and requirements.\\
+Research & Collect reliable information and record the sources.\\
+Outlining & Arrange the information into a logical order.\\
+Drafting & Write the first version of the document.\\
+Reviewing & Check facts, clarity, spelling and consistency.\\
+Publishing & Export the final document and preserve the editable source.\\
+\bottomrule
+\end{longtable}
+
+\section{Adding and changing images}
+Use the \texttt{graphicx} package:
+\begin{verbatim}
+\includegraphics[width=0.6\linewidth]{example-image}
+\includegraphics[scale=0.5]{example-image}
+\includegraphics[width=0.5\linewidth,angle=90]{example-image}
+\end{verbatim}
+\begin{figure}[ht]
+\centering
+\fbox{\parbox{0.6\linewidth}{\centering\vspace{1.2cm}Replace this box with your own image.\\[1.2cm]}}
+\caption{A placeholder for an inserted image.}
+\end{figure}
+\end{document}
