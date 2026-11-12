@@ -1,103 +1,157 @@
-# Technical Writing Portfolio
-
 <div align="center">
 
-# TECHNICAL WRITING
-### A practical course portfolio · Documentation · Typesetting · Visual communication · Version control
+# Technical Writing Portfolio
 
-**LaTeX · Google Docs · Doxygen · Beamer · Inkscape / Xfig / Draw · Gnuplot · Git / GitHub / SVN**
+**A practical collection of the tools and techniques covered in my Technical Writing course.**
 
-*A syllabus-mapped, hands-on collection of reports, source files, diagrams, slides and workflows.*
+LaTeX · Google Docs · Doxygen · Beamer · Inkscape · Xfig · LibreOffice Draw · Gnuplot · Git · GitHub
+
+<p>
+  <a href="https://github.com/kushal-gajera/technical-writing-portfolio/actions/workflows/build-docs.yml"><img src="https://img.shields.io/github/actions/workflow/status/kushal-gajera/technical-writing-portfolio/build-docs.yml?branch=main&label=example%20builds&style=flat-square" alt="Example builds"/></a>
+  <img src="https://img.shields.io/badge/course-technical%20writing-315b78?style=flat-square" alt="Technical Writing course"/>
+  <img src="https://img.shields.io/badge/license-MIT-43856a?style=flat-square" alt="MIT License"/>
+</p>
+
+<img src="assets/portfolio-flow.svg" width="100%" alt="Animated learning path: understand the syllabus, write the documents, visualise the ideas and share the work."/>
 
 </div>
 
 ---
 
-## Welcome
-
-This repository organises the major topics in a Technical Writing course into practical examples. A consistent theme—the lifecycle of a technical document—shows how documentation, visual communication, typesetting and collaboration tools fit together.
-
-> **Student note:** This is a learning scaffold. Personalise student details, complete the learning journal, run the tools yourself, and add screenshots of your own work before submitting it as coursework.
-
-## Course coverage
-
-| Syllabus area | What is included | Where to look |
-|---|---|---|
-| Documentation tools | Doxygen, Google Docs, LaTeX / Overleaf | [Doxygen](docs/doxygen/README.md) · [Google Docs](docs/google-docs/guide.md) · [LaTeX](docs/latex/README.md) |
-| Drawing software | Inkscape, Xfig, OpenOffice / LibreOffice Draw | [Drawing guide](docs/drawing/README.md) · [SVG assets](assets/) |
-| Presentations | Beamer frames, columns, blocks and slide structure | [Beamer guide](docs/beamer/README.md) · [editable source](docs/beamer/presentation.tex) |
-| Graph plotting | Gnuplot and CSV data | [Plotting guide](docs/plotting/README.md) |
-| Version control | Git, GitHub and SVN | [Git & GitHub](docs/git-github/README.md) |
-| LaTeX foundations | Installation, IDEs, article/book classes and sections | [LaTeX guide](docs/latex/README.md) |
-| Page styling | Paper sizes, packages, margins, headers/footers, orientation and columns | [LaTeX source](docs/latex/main.tex) |
-| Content formatting | Text styles, sizes, alignment, colour, lists and mathematics | [Formatting chapter](docs/latex/chapters/formatting.tex) |
-| Tables and images | Borders, merged cells, long tables, scaling and rotation | [Tables & images chapter](docs/latex/chapters/tables-images.tex) |
-| Referencing and indexing | Cross-references, bibliography and index | [References chapter](docs/latex/chapters/references-index.tex) |
-
-## Repository map
-
-```text
-technical-writing-portfolio/
-├── README.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── Makefile
-├── .github/workflows/build-docs.yml
-├── assets/                 # Editable SVG diagrams
-├── docs/
-│   ├── syllabus-map.md
-│   ├── learning-journal.md
-│   ├── latex/              # Report source, chapters and bibliography
-│   ├── google-docs/        # Workflow guide and report template
-│   ├── doxygen/            # C++ source, API comments and Doxyfile
-│   ├── beamer/             # Editable presentation source
-│   ├── drawing/            # Inkscape, Xfig and Draw exercises
-│   ├── plotting/           # Gnuplot script and sample CSV
-│   └── git-github/         # Git / GitHub guide and command cheat sheet
-└── scripts/                # Structure validation
-```
-
 ## Start here
 
-1. Read the [syllabus coverage map](docs/syllabus-map.md).
-2. Explore the [LaTeX report source](docs/latex/README.md).
-3. Review the [Beamer presentation source](docs/beamer/README.md).
-4. Generate API documentation using the [Doxygen project](docs/doxygen/README.md).
-5. Practise diagrams with the [drawing guide](docs/drawing/README.md).
-6. Run the [Gnuplot exercise](docs/plotting/README.md).
-7. Learn the [Git / GitHub workflow](docs/git-github/README.md).
-8. Record your own reflections in the [learning journal](docs/learning-journal.md).
+New to this repository? Open **[docs/START-HERE.md](docs/START-HERE.md)**. It explains which file to open first for each topic and gives you a practical order to follow.
 
-## Visual overview
+### Quick navigation
 
-![Technical writing workflow](assets/technical-writing-workflow.svg)
+| I want to… | Open |
+|---|---|
+| See everything in the course outline | [Syllabus map](docs/syllabus-map.md) |
+| Understand the folder structure | [Repository map](assets/repository-map.svg) |
+| Make a report with LaTeX | [LaTeX guide](docs/latex/README.md) |
+| Format a report in Google Docs | [Google Docs guide](docs/google-docs/guide.md) |
+| Generate API documentation | [Doxygen guide](docs/doxygen/README.md) |
+| Make presentation slides | [Beamer guide](docs/beamer/README.md) |
+| Create diagrams | [Drawing guide](docs/drawing/README.md) |
+| Plot a graph from data | [Gnuplot guide](docs/plotting/README.md) |
+| Learn commits, branches and GitHub | [Git guide](docs/git-github/README.md) |
 
-## Build and check
+## How the repository is organised
 
-Install the tools needed for the outputs you want to generate: TeX Live, Doxygen, Graphviz and Gnuplot.
+This map shows how the main folders relate to the subjects in the course. You can open each guide directly from the links above.
+
+<p align="center">
+  <img src="assets/repository-map.svg" width="100%" alt="Repository map showing the learner, README overview and five topic groups: writing documents, presentations, code documentation, drawing and plotting, and version control."/>
+</p>
+
+## What is included?
+
+### 1. Document authoring
+
+**LaTeX / Overleaf**
+
+- A report split into manageable source files.
+- Page size, margins, headers, footers, columns and landscape pages.
+- Text formatting, lists and mathematical equations.
+- Tables, merged cells, dashed rules, long tables and figures.
+- Cross-references, bibliography and index.
+
+[Open the LaTeX guide](docs/latex/README.md) · [Open the main source](docs/latex/main.tex)
+
+**Google Docs**
+
+- A practical report-formatting guide.
+- Heading styles, automatic table of contents, page setup and page numbers.
+- Tables, images, citations, comments and sharing.
+
+[Open the Google Docs guide](docs/google-docs/guide.md) · [Open the report template](docs/google-docs/technical-report-template.md)
+
+### 2. Presentations
+
+**Beamer**
+
+A sample slide deck that demonstrates frames, two-column layouts, blocks, lists, tables and equations.
+
+<p align="center">
+  <img src="docs/beamer/beamer-layout.svg" width="82%" alt="A Beamer slide with a title, two columns and content blocks."/>
+</p>
+
+[Open the Beamer guide](docs/beamer/README.md) · [Edit presentation.tex](docs/beamer/presentation.tex)
+
+### 3. Code documentation
+
+**Doxygen**
+
+A small C++ calculator with comments that explain classes, functions, parameters, return values and exceptions. Doxygen uses those comments to build HTML reference pages.
+
+<p align="center">
+  <img src="docs/doxygen/doxygen-flow.svg" width="82%" alt="C++ source and comments go into Doxygen and become HTML API reference pages."/>
+</p>
+
+[Open the Doxygen guide](docs/doxygen/README.md) · [Open calculator.hpp](docs/doxygen/include/calculator.hpp)
+
+### 4. Drawing and graph plotting
+
+**Inkscape, Xfig and LibreOffice Draw**
+
+Editable SVG examples and exercises for alignment, grouping, connectors, labels and exporting diagrams.
+
+[Open the drawing guide](docs/drawing/README.md) · [View the workflow diagram](assets/technical-writing-workflow.svg)
+
+**Gnuplot**
+
+A CSV dataset and plotting script that create a labelled progress graph.
+
+<p align="center">
+  <img src="assets/plotting-flow.svg" width="82%" alt="CSV and Gnuplot script are processed by Gnuplot to make a graph image."/>
+</p>
+
+[Open the plotting guide](docs/plotting/README.md) · [Open the plotting script](docs/plotting/progress-plot.gp)
+
+### 5. Version control and sharing
+
+**Git, GitHub and SVN**
+
+Learn the normal cycle: edit files, stage changes, commit a snapshot, push it to GitHub and review the result.
+
+<p align="center">
+  <img src="docs/git-github/git-workflow.svg" width="92%" alt="Git workflow from editing and staging through commit, push and pull request review."/>
+</p>
+
+[Open the Git guide](docs/git-github/README.md) · [Git command cheat sheet](docs/git-github/command-cheatsheet.md)
+
+## Build the examples
+
+You only need to install a tool when you want to run that section. From the repository root:
 
 ```bash
-python3 scripts/check-structure.py
+# Check that the important files are present
 make check
+
+# Compile the LaTeX report and Beamer slides
 make latex
 make slides
+
+# Generate code documentation and a graph
 make doxygen
 make plot
 ```
 
-A GitHub Actions workflow runs these checks and builds the LaTeX PDF, Beamer PDF, Doxygen HTML and Gnuplot image on pushes to `main`. The resulting files are available as the **technical-writing-builds** workflow artifact.
+See each topic guide for the exact requirements. GitHub Actions also runs the example build workflow when files are pushed to `main`.
 
-## Before academic submission
+## Before presenting this project
 
-- Replace sample student name, department and date placeholders.
-- Add screenshots of your own Google Docs, Doxygen, Inkscape / Draw and Gnuplot work.
-- Complete the learning journal in your own words.
-- Review your instructor's formatting and submission requirements.
+This repository is a practical course portfolio, not a substitute for your own lab work. Before showing it to your professor:
+
+- Replace the sample student and department details.
+- Run the examples and add screenshots of the outputs you made yourself.
+- Write your own notes in [the learning journal](docs/learning-journal.md).
+- Be prepared to explain what each tool does and how one example works.
 
 ---
 
 <div align="center">
 
-**Learn it · Document it · Visualise it · Version it**
+**Understand · Write · Visualise · Share**
 
 </div>

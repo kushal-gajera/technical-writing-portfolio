@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="t d">
+<title id="t">Animated learning path for the Technical Writing Portfolio</title>
+<desc id="d">A moving marker travels below four cards: understand the syllabus, create the documents, add visuals and share the work.</desc>
+<defs><style>
+.bg{fill:#101e34}.title{font:700 28px Arial,sans-serif;fill:#f8fafc}.small{font:15px Arial,sans-serif;fill:#b6c7d9}.node{fill:#192b45;stroke:#425b78;stroke-width:2}.nodeTitle{font:700 19px Arial,sans-serif;fill:#f8fafc}.nodeSub{font:14px Arial,sans-serif;fill:#bfd0e1}.line{stroke:#66809c;stroke-width:4;fill:none;stroke-linecap:round}
+</style></defs>
+<rect class="bg" width="1200" height="360" rx="22"/>
+<text x="600" y="54" text-anchor="middle" class="title">One course · five tools · one connected portfolio</text>
+<text x="600" y="82" text-anchor="middle" class="small">Follow the flow from understanding the topic to presenting your own work.</text>
+<path d="M161 290 H1043" class="line"/>
+<g>
+ <rect x="42" y="132" width="238" height="142" rx="14" class="node"/>
+ <text x="161" y="177" text-anchor="middle" class="nodeTitle">01 · Understand</text>
+ <text x="161" y="208" text-anchor="middle" class="nodeSub">Read the syllabus map</text>
+ <text x="161" y="231" text-anchor="middle" class="nodeSub">Choose a topic</text>
+</g>
+<g>
+ <rect x="336" y="132" width="238" height="142" rx="14" class="node"/>
+ <text x="455" y="177" text-anchor="middle" class="nodeTitle">02 · Write</text>
+ <text x="455" y="208" text-anchor="middle" class="nodeSub">Google Docs + LaTeX</text>
+ <text x="455" y="231" text-anchor="middle" class="nodeSub">Reports and references</text>
+</g>
+<g>
+ <rect x="630" y="132" width="238" height="142" rx="14" class="node"/>
+ <text x="749" y="177" text-anchor="middle" class="nodeTitle">03 · Visualise</text>
+ <text x="749" y="208" text-anchor="middle" class="nodeSub">Beamer + drawing tools</text>
+ <text x="749" y="231" text-anchor="middle" class="nodeSub">Diagrams and graphs</text>
+</g>
+<g>
+ <rect x="924" y="132" width="238" height="142" rx="14" class="node"/>
+ <text x="1043" y="177" text-anchor="middle" class="nodeTitle">04 · Share</text>
+ <text x="1043" y="208" text-anchor="middle" class="nodeSub">Doxygen + GitHub</text>
+ <text x="1043" y="231" text-anchor="middle" class="nodeSub">Build, review and publish</text>
+</g>
+<circle r="9" fill="#f5bd70" stroke="#fff4dc" stroke-width="3">
+ <animateMotion dur="8s" repeatCount="indefinite" path="M161 290 H1043"/>
+</circle>
+<g fill="#f5bd70"><circle cx="161" cy="290" r="4"/><circle cx="455" cy="290" r="4"/><circle cx="749" cy="290" r="4"/><circle cx="1043" cy="290" r="4"/></g>
+<text x="600" y="330" text-anchor="middle" class="small">The moving marker shows the learning sequence. Each step links to a practical guide below.</text>
+</svg>

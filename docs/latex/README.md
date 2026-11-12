@@ -1,18 +1,22 @@
-# LaTeX and Overleaf guide
+# LaTeX and Overleaf
 
-LaTeX is a document preparation system. You write structured source in `.tex` files; a compiler turns it into a professionally typeset PDF. It is useful for mathematics, references and long reports.
+LaTeX is a document preparation system. You write structured source in `.tex` files, then compile them into a PDF. It is especially useful for reports with equations, tables, cross-references and bibliographies.
 
-## Choose an environment
+![LaTeX workflow](latex-workflow.svg)
 
-| Environment | Best for |
-|---|---|
-| Overleaf | Browser-based editing and collaboration |
-| TeX Live / MacTeX | Local LaTeX distribution on Linux / macOS |
-| MiKTeX | Local LaTeX distribution, commonly used on Windows |
-| TeXstudio / TeXworks | Desktop LaTeX editors |
-| VS Code + LaTeX Workshop | Editing LaTeX in VS Code |
+## Files to open
 
-## Compile
+- `main.tex` — main report file; it connects the sections.
+- `chapters/formatting.tex` — text styles, alignment, lists and equations.
+- `chapters/tables-images.tex` — tables, merged cells, long tables, and image commands.
+- `chapters/references-index.tex` — cross-references, citations and index.
+- `references.bib` — bibliography entries.
+
+## Getting started
+
+You can use **Overleaf** in a browser, or install a local distribution such as **TeX Live / MacTeX** or **MiKTeX**. Common editors include TeXstudio, TeXworks and VS Code with LaTeX Workshop.
+
+## Compile the report
 
 From this folder:
 
@@ -24,32 +28,28 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
-The final passes resolve references. On Overleaf, upload this folder while preserving `chapters/`, set `main.tex` as the main document and recompile.
+Run LaTeX again after BibTeX and MakeIndex so the references and index appear correctly. In Overleaf, upload the folder while preserving the `chapters/` directory, set `main.tex` as the main file and recompile.
 
 ## Document classes
 
-- `article`: assignments, papers and short reports.
-- `report`: longer reports, usually with chapters.
-- `book`: books and manuals with parts and front / back matter.
+- `article` — assignments, papers and short reports.
+- `report` — longer reports, usually with chapters.
+- `book` — books and manuals with parts and chapters.
 
-The example uses `article`. For a `book` experiment, change the document class and use `\chapter` for top-level divisions.
-
-## Covered features
-
-Paper size, packages, margins, headers and footers, page numbers, portrait / landscape pages, columns, text styles, sizes, alignment, colour, lists, equations, tables, merged cells, dashed rules, long tables, figures, image scaling and rotation, captions, labels, cross-references, BibTeX and an index.
+The supplied report uses `article`. Try changing the class to `report` or `book` and adjust the section structure.
 
 ## Common errors
 
-| Error | First check |
+| Message / symptom | What to check |
 |---|---|
-| Undefined control sequence | Spelling and required package |
+| Undefined control sequence | Command spelling and required package |
 | Missing $ inserted | Math expression outside math mode |
 | Missing } inserted | Unmatched braces |
-| File not found | Image / input path |
+| File not found | Image or input file path |
 | Citation undefined | Citation key and BibTeX run |
-| Label may have changed | Run LaTeX again |
-| Overfull hbox | Long text or narrow layout |
+| Label may have changed | Compile LaTeX again |
+| Overfull hbox | Long text or a narrow layout |
 
-## Practice
+## Try it yourself
 
-Change the title, add a section and equation, insert a figure, add a citation and index keyword, and try a landscape page. Keep the `.tex` source as the editable primary work.
+Change the title and author, add a section, insert an equation, create a table, add a citation and index term, then compile the report again. Keep the editable `.tex` files with your PDF.

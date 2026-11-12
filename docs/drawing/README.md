@@ -1,10 +1,12 @@
 # Drawing software — Inkscape, Xfig and OpenOffice / LibreOffice Draw
 
-Vector diagrams stay sharp when resized and are useful in reports, slides and manuals. This portfolio includes two editable SVG files: [technical writing workflow](../../assets/technical-writing-workflow.svg) and [document lifecycle](../../assets/document-lifecycle.svg).
+Vector diagrams stay sharp when resized and are useful in reports, slides and manuals.
+
+![Drawing workflow](../../assets/drawing-workflow.svg)
 
 ## Inkscape exercise
 
-1. Open the workflow SVG.
+1. Open [the technical writing workflow diagram](../../assets/technical-writing-workflow.svg) in Inkscape.
 2. Change a label and the fill colour of one box.
 3. Align the boxes and distribute them evenly.
 4. Add a connector or simple icon.

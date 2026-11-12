@@ -1,55 +1,43 @@
-# Git, GitHub and SVN — version control guide
+# Git and GitHub — track and share your work
 
-**Git** is a distributed version control system: each clone contains repository history. **GitHub** hosts Git repositories and adds collaboration features such as issues, pull requests and reviews. **SVN (Subversion)** is a centralised version control system.
+Git records changes to files so that you can see what changed and return to earlier versions. GitHub hosts Git repositories and adds collaboration features such as pull requests and reviews. SVN (Subversion) is another version-control system that uses a centralised model.
 
-## Configure Git once
+![Git workflow](git-workflow.svg)
 
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-git config --global init.defaultBranch main
-```
-
-Never commit passwords or access tokens.
-
-## Everyday workflow
+## The everyday Git cycle
 
 ```bash
 git status
 git add .
-git commit -m "docs: add report formatting examples"
-git log --oneline --graph
+git commit -m "Add examples to the report"
 git push
 ```
 
-## Branch workflow
+- **status** shows which files changed.
+- **add** selects which changes go into the next snapshot.
+- **commit** saves the snapshot with a message.
+- **push** sends your commits to GitHub.
+
+## Make a branch
 
 ```bash
-git switch -c docs/add-learning-reflection
-# edit and test files
-git add docs/learning-journal.md
-git commit -m "docs: add learning reflection"
-git push -u origin docs/add-learning-reflection
+git switch -c add-report-examples
+# edit and test your files
+git add .
+git commit -m "Add report examples"
+git push -u origin add-report-examples
 ```
 
-Open a pull request on GitHub, review the diff, discuss changes and merge when approved.
+Open a pull request on GitHub to review the branch before merging.
 
-## Git versus SVN
+## Git and SVN
 
-| Concept | Git | SVN |
-|---|---|---|
-| Model | Distributed | Centralised client-server |
-| Local history | Full history in a clone | Working copy relies on central repository |
-| Save operation | `git commit` creates a local commit | `svn commit` sends changes to central server |
-| Update | `git pull` fetches and integrates | `svn update` updates working copy |
-| Branching | Lightweight branches | Branches commonly represented as repository paths |
+| Git | SVN |
+|---|---|
+| Distributed: each clone has repository history. | Centralised: the central server is the main source of history. |
+| A commit is saved locally first. | A commit is sent to the central repository. |
+| Branches are lightweight and common. | Branches are commonly managed as repository paths. |
 
-## Good habits
+## A few useful commands
 
-- Commit focused changes with descriptive messages.
-- Review `git diff` before committing.
-- Pull remote changes before collaborating.
-- Keep generated output out of version control.
-- Never commit credentials.
-
-See the [command cheat sheet](command-cheatsheet.md).
+See [command-cheatsheet.md](command-cheatsheet.md) for the complete list. Never add passwords, API keys or access tokens to a repository.

@@ -1,27 +1,34 @@
-# Graph plotting with Gnuplot
+# Gnuplot — make a graph from data
 
-Gnuplot is a command-line graphing program that reads data files and exports plots such as PNG, SVG, EPS or PDF.
+Gnuplot is a graphing program that reads data files and produces plots. This example uses a small CSV file and a script so that you can change the data or the graph without drawing it by hand.
 
-## Files
+![Gnuplot process](../../assets/plotting-flow.svg)
 
-- `sample-data.csv` — illustrative monthly progress data.
-- `progress-plot.gp` — labelled line chart with legend and grid.
+## Files to open
 
-## Run
+- `sample-data.csv` — the example data.
+- `progress-plot.gp` — the commands that create the graph.
+
+## Run the example
 
 ```bash
 cd docs/plotting
 gnuplot progress-plot.gp
 ```
 
-The script writes `documentation-progress.png` in this folder.
+The script creates `documentation-progress.png` in this folder.
 
-## Understand the script
+## What the commands do
 
-- `set datafile separator` configures CSV parsing.
-- `set terminal` selects an output format.
-- `set output` chooses the output filename.
-- `set title`, `set xlabel`, and `set ylabel` describe the plot.
-- `plot` maps CSV columns to axes and legend labels.
+| Command | Purpose |
+|---|---|
+| `set datafile separator ","` | Reads a CSV file |
+| `set terminal` | Selects the output format |
+| `set output` | Sets the image filename |
+| `set title` | Adds a graph title |
+| `set xlabel` / `set ylabel` | Labels the axes |
+| `plot` | Chooses columns and draws the data |
 
-Modify one value, add another series, or try the PDF terminal. Label units and explain what the data represents; never use a misleading axis scale.
+## Try it yourself
+
+Change a value in the CSV file, run Gnuplot again and compare the new graph. Then change the title or axis labels. The supplied values are illustrative, not measured experimental results.

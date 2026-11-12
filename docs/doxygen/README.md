@@ -1,8 +1,17 @@
 # Doxygen — source-code documentation
 
-Doxygen reads structured comments in source code and generates a browsable API reference. This example documents a small C++ `Calculator` class.
+Doxygen reads structured comments in source code and creates a browsable API reference. The example in this folder documents a small C++ `Calculator` class.
 
-## Generate documentation
+![Doxygen workflow](doxygen-flow.svg)
+
+## Files to open
+
+- `include/calculator.hpp` — declarations and documentation comments.
+- `src/calculator.cpp` — function implementations.
+- `src/main.cpp` — a small program that uses the class.
+- `Doxyfile` — settings used by Doxygen.
+
+## Generate the HTML pages
 
 Install Doxygen, then run:
 
@@ -12,25 +21,26 @@ doxygen --version
 doxygen Doxyfile
 ```
 
-Open `html/index.html` in a browser. The Doxyfile configures the HTML output.
+Open `html/index.html` in a browser. The configuration turns on HTML output and source browsing.
 
-## Useful comment tags
+## Comment tags used here
 
-- `@brief` — short summary.
-- `@param` — describes a parameter.
-- `@return` — explains the returned value.
-- `@throws` — documents an exception.
-- `@details` — provides a longer explanation.
-- `@file` — describes a source file.
+| Tag | What it explains |
+|---|---|
+| `@brief` | A short summary |
+| `@param` | A function parameter |
+| `@return` | The returned value |
+| `@throws` | An exception that may be raised |
+| `@file` | The purpose of a source file |
 
-## Practical tasks
+## Try it yourself
 
-1. Add a square operation and document it.
-2. Add a divide-by-zero exception and document it with `@throws`.
-3. Regenerate the HTML and inspect the class page.
-4. Add a usage example to the main page.
+1. Add a square function to the calculator.
+2. Write a short comment with its purpose and return value.
+3. Run Doxygen again.
+4. Open the generated class page and check that the new function appears.
 
-Build the C++ example with:
+You can compile the C++ example with:
 
 ```bash
 g++ -std=c++17 -Wall -Wextra -pedantic -Iinclude src/calculator.cpp src/main.cpp -o calculator
