@@ -66,6 +66,6 @@ On GitHub, open a pull request to discuss and review the branch before merging i
 
 Git is distributed: every clone contains repository history. SVN (Subversion) is centralised: the central server is the main repository. Both tools track revisions and support collaborative development.
 
-More: [Git command cheat sheet](git-command-cheatsheet.md) · [GitHub workflow](github-workflow.md)
+More: [Git command cheat sheet](git-command-cheatsheet.md) · [GitHub workflow](../06-GitHub/github-workflow.md)
 
 Never commit passwords, API keys, access tokens or private information.
