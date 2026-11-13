@@ -22,7 +22,6 @@ This portfolio brings together the tools and topics covered during the course. E
 
 | No. | Topic | What you will explore |
 |:---:|---|---|
-| 00 | [Documentation Fundamentals](00-Documentation-Fundamentals/README.md) | Purpose, audience, clear writing and documentation workflow |
 | 01 | [LaTeX](01-LaTeX/README.md) | Create structured documents, format pages, write equations, tables and references |
 | 02 | [Beamer](02-Beamer/README.md) | Create slide presentations using frames, themes, columns and blocks |
 | 03 | [Doxygen](03-Doxygen/README.md) | Generate code documentation from structured source comments |
@@ -31,6 +30,26 @@ This portfolio brings together the tools and topics covered during the course. E
 | 06 | [GitHub](06-GitHub/README.md) | Host repositories, push code, review changes and collaborate |
 
 Click a topic name to open its folder and start learning.
+
+## A Few Principles of Technical Writing
+
+Technical documentation explains a product, process, program or system so readers can understand it and use it correctly.
+
+| Document type | Purpose |
+|---|---|
+| User guide | Helps readers complete a task |
+| Tutorial | Teaches a process step by step |
+| API documentation | Explains classes, functions and interfaces |
+| Reference | Provides concise facts for lookup |
+| Technical report | Presents work, methods and findings |
+
+Good documentation starts by identifying its audience and purpose. Use precise, familiar words, explain technical terms, organise information with meaningful headings, and use numbered steps when order matters. Include examples where they make an idea easier to follow.
+
+A useful documentation workflow is:
+
+**Plan → Research → Outline → Draft → Review → Publish → Maintain**
+
+Before sharing a document, check that the instructions are clear, examples match the explanation, references are included where needed, and formatting is consistent.
 
 ## What This Portfolio Contains
 
@@ -46,7 +65,6 @@ Click a topic name to open its folder and start learning.
 ```text
 technical-writing-portfolio/
 │
-├── 00-Documentation-Fundamentals/
 ├── 01-LaTeX/
 │   ├── 01-first-document/
 │   ├── 02-page-layout/
@@ -78,7 +96,7 @@ technical-writing-portfolio/
 
 ## How to Explore
 
-You can study the topics independently or follow the numbered order.
+You can study the topics independently or follow the numbered order. The technical-writing principles above apply throughout the portfolio.
 
 1. Open the README in the topic folder you want to study.
 2. Read the explanation and inspect the commands or source files.
